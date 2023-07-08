@@ -1,6 +1,11 @@
-﻿namespace IUstaProject;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+using System;
+using System.IO;
 
-internal class Orderer
+namespace IUstaProject;
+
+public class Orderer
 {
     public string? Name { get; set; }
     public string? Surname { get; set; }

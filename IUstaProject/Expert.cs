@@ -1,6 +1,6 @@
 ﻿namespace IUstaProject;
 
-internal class Expert
+public class Expert
 {
     public string? Name { get; set; }
     public string? Surname { get; set; }
@@ -8,5 +8,7 @@ internal class Expert
     public string? Password { get; set; }
     public string? CategoryName { get; set; }
     public string? PhotoPath { get; set; }
+
+
 
 }
