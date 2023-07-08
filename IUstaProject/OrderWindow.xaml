@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="OrderWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Name:" Grid.Row="0"/>
+            <TextBlock Grid.Row="0"/>
+            <TextBlock Text="Surname:" Grid.Row="1"/>
+            <TextBlock Grid.Row="1"/>
+            <TextBlock Text="Work Area:" Grid.Row="2"/>
+            <TextBlock Grid.Row="2"/>
+            <TextBlock Text="Email:" Grid.Row="3"/>
+            <TextBlock Grid.Row="3"/>
+            <Button Height="50" Width="300" Grid.Row="4" Content="Order"/>
+        </Grid>
     </Grid>
 </Window>

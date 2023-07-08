@@ -1,0 +1,22 @@
+﻿<Window x:Class="IUstaProject.OrdererWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IUstaProject"
+        mc:Ignorable="d"
+        Title="OrdererWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Row="0">
+            <Image x:Name="OrdererPhoto" Height="70" Width="80" Margin="10"/>
+            <Label x:Name="FullNameLbl" Height="50" Width="200" Margin="15"></Label>
+            <Label x:Name="EmailLbl" Height="50" Width="200" Margin="15"></Label>
+            <Label x:Name="CompanyNameLbl" Height="50" Width="200" Margin="15"></Label>
+        </WrapPanel>
+        <ListView Grid.Row="1"></ListView>
+    </Grid>
+</Window>
