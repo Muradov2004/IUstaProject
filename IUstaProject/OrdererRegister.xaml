@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="OrdererRegister" Height="450" Width="800">
+        Title="OrdererRegister" Height="550" Width="600">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBox x:Name="NameTxtBox" Width="300" materialDesign:HintAssist.Hint="Name" materialDesign:HintAssist.IsFloating="True"/>
@@ -24,14 +24,14 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="PhotoPathTxtBox" Grid.Column="0" materialDesign:HintAssist.Hint="Foto Path" materialDesign:HintAssist.IsFloating="True"/>
-                <Button Grid.Column="1" x:Name="OpenFileDialog" Click="OpenFileDialog_Click" >File...</Button>
+                <Button Grid.Column="1" x:Name="OpenFileDialog" Click="OpenFileDialog_Click">File...</Button>
             </Grid>
             <TextBox x:Name="EmailTxtBox" Width="300" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="PasswordTxtBox" Width="300" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"/>
             <ComboBox x:Name="WorkAreaComboBox"  Margin="0,25" Height="25" Width="300"/>
             <TextBox x:Name="WorkAreaTxtBox" Width="300" materialDesign:HintAssist.Hint="Work Area" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="CompanyNameTxtBox"  Width="300" materialDesign:HintAssist.Hint="Company Name" materialDesign:HintAssist.IsFloating="True"></TextBox>
-            <Button Name="RegisterBtn" Margin="0,10" Content="Register"/>
+            <Button Name="RegisterBtn" Margin="0,10" Content="Register" FontSize="20"/>
         </StackPanel>
     </Grid>
 </Window>

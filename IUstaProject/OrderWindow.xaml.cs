@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace IUstaProject
 {
     /// <summary>
-    /// Interaction logic for ExpertRegister.xaml
+    /// Interaction logic for OrderWindow.xaml
     /// </summary>
-    public partial class ExpertRegister : Window
+    public partial class OrderWindow : Window
     {
-        public ExpertRegister()
+        public OrderWindow()
         {
             InitializeComponent();
-        }
-
-        private void OpenFileDialog_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

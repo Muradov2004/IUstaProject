@@ -13,7 +13,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="ExpertRegister" Height="450" Width="500">
+        Title="ExpertRegister" Height="550" Width="600">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBox x:Name="NameTxtBox" Width="300" materialDesign:HintAssist.Hint="Name" materialDesign:HintAssist.IsFloating="True"/>
@@ -24,7 +24,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="PhotoPathTxtBox" Grid.Column="0" materialDesign:HintAssist.Hint="Foto Path" materialDesign:HintAssist.IsFloating="True"/>
-                <Button Grid.Column="1" x:Name="OpenFileDialog" >Foto...</Button>
+                <Button Grid.Column="1" x:Name="OpenFileDialog" Click="OpenFileDialog_Click" >Foto...</Button>
             </Grid>
             <TextBox x:Name="EmailTxtBox" Width="300" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="PasswordTxtBox" Width="300" materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.IsFloating="True"/>

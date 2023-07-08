@@ -20,28 +20,15 @@ namespace IUstaProject
     /// </summary>
     public partial class OrdererRegister : Window
     {
-        private string sourceFilePath;
 
         public OrdererRegister()
         {
             InitializeComponent();
         }
 
-        public void EncryptFile()
-        {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            dialog.InitialDirectory = @"C:\";
-            dialog.Title = "Please select an image file to encrypt.";
-
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                //Encrypt the selected file. I'll do this later. :)
-            }
-        }
         private void OpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
-            EncryptFile();
+
         }
     }
 }
