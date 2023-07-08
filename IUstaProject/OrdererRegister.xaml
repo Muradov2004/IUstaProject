@@ -24,9 +24,10 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="PhotoPathTxtBox" Grid.Column="0" materialDesign:HintAssist.Hint="Foto Path" materialDesign:HintAssist.IsFloating="True"/>
-                <Button Grid.Column="1" x:Name="OpenFileDialog" >FotoPath</Button>
+                <Button Grid.Column="1" x:Name="OpenFileDialog" Click="OpenFileDialog_Click" >File...</Button>
             </Grid>
             <TextBox x:Name="EmailTxtBox" Width="300" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"/>
+            <TextBox x:Name="PasswordTxtBox" Width="300" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"/>
             <ComboBox x:Name="WorkAreaComboBox"  Margin="0,25" Height="25" Width="300"/>
             <TextBox x:Name="WorkAreaTxtBox" Width="300" materialDesign:HintAssist.Hint="Work Area" materialDesign:HintAssist.IsFloating="True"/>
             <TextBox x:Name="CompanyNameTxtBox"  Width="300" materialDesign:HintAssist.Hint="Company Name" materialDesign:HintAssist.IsFloating="True"></TextBox>

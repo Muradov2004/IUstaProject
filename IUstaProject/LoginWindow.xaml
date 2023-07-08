@@ -13,12 +13,12 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
+        Title="LoginWindow" Height="420" Width="700">
     <Grid>
         <StackPanel HorizontalAlignment="Center">
             <TextBox x:Name="Email" Width="400" Margin="65" materialDesign:HintAssist.Hint="Email" materialDesign:HintAssist.IsFloating="True"></TextBox>
             <PasswordBox x:Name="Pasword" Width="400"  materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.IsFloating="True"></PasswordBox>
-            <Button Content="Login" Height="50" Width="150" Margin="0,50" FontSize="25"/>
+            <Button Content="Login" Height="50" Width="150" Margin="0,50" FontSize="25" Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>

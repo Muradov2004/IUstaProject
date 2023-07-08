@@ -1,10 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace IUstaProject;
 
-public class Expert
+[Index(nameof(Email), IsUnique = true)]
+[Index(nameof(CompanyName), IsUnique = true)]
+public class Orderer
 {
     [Key]
     public int Id { get; set; }
@@ -26,13 +33,14 @@ public class Expert
     [Required]
     [ForeignKey("CategoryName")]
     public string CategoryName { get; set; }
-    
+    [StringLength(40)]
+    public string? CompanyName { get; set; }
     public override string ToString() => $@"
 Photo: {PhotoPath}
 Name: {Name}
 Surname: {Surname}
 Email: {Email}
 Password: {Password}
-Category: {CategoryName}";
+Category: {CategoryName}
+Company: {CompanyName}";
 }
-
