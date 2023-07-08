@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="AdminWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Height="400" Width="800">
+            <Button x:Name="AdminCategory" Width="200" Height="45" Margin="25">Category</Button>
+            <Button x:Name="AdminİnformationOnOrders" Width="200" Height="45" Margin="25">İnformation On Orders</Button>
+            <Button x:Name="AdminAboutMasters" Width="200" Height="45" Margin="25">About Masters</Button>
+            <Button x:Name="AdminCustomerİnformation" Width="200" Height="45" Margin="25">Customer İnformation</Button>
+        </StackPanel>
     </Grid>
 </Window>
