@@ -34,12 +34,16 @@ namespace IUstaProject
 
         private void RegisterAsOrdererBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new OrdererRegister();
+            window.Show();
+            Hide();
         }
 
         private void RegisterAsExpertBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            var window = new ExpertRegister();
+            window.Show();
+            Hide();
         }
     }
 }
